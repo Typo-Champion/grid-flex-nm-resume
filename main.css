@@ -1,0 +1,108 @@
+/* mobile view */
+#container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    border: 1px solid rgb(15, 4, 4);
+    grid-template-columns: 1, auto;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: 
+    "nb"
+    "av"
+    "ct"
+    "ed"
+    "ex"
+    "cp"
+    "bi"
+    "ft";  
+}
+
+#navbar {
+    display:grid; 
+    grid-template-columns: repeat(5, 100);
+    grid-template-areas: "ni ni ni ni ni";
+    justify-content: space-evenly; 
+    align-items: center;  
+    grid-area: nb;
+    background: rgb(77, 155, 155);
+    padding: 10px;
+}
+
+#avatar {
+    border: 1px solid black;
+    align-items: center;
+    grid-area: av;
+}
+
+
+#contact {
+    grid-area: ct;
+}
+
+#edu {
+    grid-area: ed;
+}
+
+#exp {
+    grid-area: ex;
+}
+
+#comp {
+    grid-area: cp;
+}
+
+#bio {
+    grid-area: bi;
+    justify-self: auto;
+}
+
+#footer {
+    /* grid-area: ft; */
+    /* justify-self: self-end; */
+    /* justify-content: space-evenly; */
+    padding-right: 10px;
+    /* display: grid;  */
+    grid-template-columns: 1fr 1fr;
+    /* grid-area:  */
+   
+}
+#by {
+    grid-area: by;
+    text-align: center;
+    /* margin: 0; */
+}
+#fti {
+    display: grid;
+    grid-template-columns: repeat(5, 20px);
+    grid-area: fti;
+    justify-content: space-between;
+    
+}
+
+.navicon { 
+    grid-area: ni;
+    align-items: center;
+} 
+
+.heading {
+    color: white;
+    background: rgb(77, 155, 155);
+    margin: 0;
+    
+}
+section {
+    border: solid 1px black;
+    text-align: center;
+}
+
+li {
+    padding: 5px;
+    list-style: none;
+    font-size: 25px;
+}
+
+header footer {
+    background: grey;
+    /* justify-self: center; */
+    justify-content: space-evenly;  
+}

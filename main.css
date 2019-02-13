@@ -4,7 +4,7 @@
     width: 100vw;
     display: grid;
     border: 1px solid rgb(15, 4, 4);
-    grid-template-columns: 1, auto;
+    grid-template-columns: 2, auto;
     grid-template-rows: repeat(8, auto);
     grid-template-areas: 
     "nb"
@@ -17,6 +17,21 @@
     "ft";  
 }
 
+.flexit {
+    display:flex;
+    flex-flow: wrap;
+    /* height: 230vh;
+        */
+}
+.flexit section {
+    width: 900px;
+    height: 350px;
+    
+   
+    
+
+}
+
 #navbar {
     display:grid; 
     grid-template-columns: repeat(5, 100);
@@ -26,12 +41,14 @@
     grid-area: nb;
     background: rgb(77, 155, 155);
     padding: 10px;
+    
 }
 
 #avatar {
     border: 1px solid black;
     align-items: center;
     grid-area: av;
+    padding: 1px;
 }
 
 
@@ -57,19 +74,13 @@
 }
 
 #footer {
-    /* grid-area: ft; */
-    /* justify-self: self-end; */
-    /* justify-content: space-evenly; */
     padding-right: 10px;
-    /* display: grid;  */
     grid-template-columns: 1fr 1fr;
-    /* grid-area:  */
-   
+  
 }
 #by {
     grid-area: by;
     text-align: center;
-    /* margin: 0; */
 }
 #fti {
     display: grid;

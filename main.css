@@ -1,9 +1,9 @@
 /* mobile view */
 #container {
-    height: 100vh;
+    height: auto;
     width: 100vw;
     display: grid;
-    border: 1px solid rgb(15, 4, 4);
+    border: 1px solid rgb(15, 4, 4);    
     grid-template-columns: 2, auto;
     grid-template-rows: repeat(8, auto);
     grid-template-areas: 
@@ -20,15 +20,15 @@
 .flexit {
     display:flex;
     flex-flow: wrap;
-    /* height: 230vh;
-        */
-}
+    justify-content: center;
+    align-items: stretch;
+    align-items: 
+   
+    
+} 
 .flexit section {
     width: 900px;
     height: 350px;
-    
-   
-    
 
 }
 
@@ -39,8 +39,8 @@
     justify-content: space-evenly; 
     align-items: center;  
     grid-area: nb;
-    background: rgb(77, 155, 155);
-    padding: 10px;
+    background: gray;
+    padding: 5px;
     
 }
 
@@ -74,6 +74,7 @@
 }
 
 #footer {
+    background: gray;
     padding-right: 10px;
     grid-template-columns: 1fr 1fr;
   
@@ -104,6 +105,7 @@
 section {
     border: solid 1px black;
     text-align: center;
+    justify-self: flex-end
 }
 
 li {
@@ -115,5 +117,6 @@ li {
 header footer {
     background: grey;
     /* justify-self: center; */
-    justify-content: space-evenly;  
+    justify-content: space-evenly;
+    
 }
